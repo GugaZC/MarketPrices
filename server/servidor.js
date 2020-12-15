@@ -101,6 +101,7 @@ app.use(bodyParser.json());
 
 app.get("/product/:id", async (req, res) => {
     const productId = req.params.id;
+    console.log("inside product");
 
     let product = await getProduct(productId);
 
@@ -109,6 +110,7 @@ app.get("/product/:id", async (req, res) => {
 
 app.get("/client/:name", async (req, res, params) => {
     const clientName = req.params.name;
+    console.log("inside client");
 
     let client = await getClient(clientName);
 
