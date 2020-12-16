@@ -11,14 +11,14 @@ O usuário loga-se no aplicativo, e após a confirmação de seu login, ele pode
 Para o funcionamento pleno do projeto, é necessário:
 
 <ul>
-<li> Instalar o Cordova e suas dependências <ul>
-  <li>Android SDK</li>
-  <li>JAVA SDK</li>
-  <li>advanced-http</li>
-  <li>plugin-file</li>
-  <li>qrscanner</li>
-  <li>sqlite-storage</li> </ul> </li>
-<li> Instalar o Node.js e suas dependências <ul>
+<li> Instalar o Cordova e suas dependências: <ul>
+  <li> <b>Android SDK </b></li>
+  <li> <b>JAVA SDK</b></li>
+  <li><b>advanced-http</b></li>
+  <li> <b>plugin-file</b></li>
+  <li> <b>qrscanner</b></li>
+  <li> <b>sqlite-storage</b></li> </ul> </li>
+<li> Instalar o Node.js e suas dependências: <ul>
   <li>cors</li>
   <li>express</li>
   <li>method-override</li>
