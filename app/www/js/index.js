@@ -41,6 +41,7 @@ const submitName = (name) => {
         type: "get",
     };
     try {
+        //????
         cordova.plugin.http.sendRequest(
             `http://192.168.0.105/client/${name}`,
             options,
