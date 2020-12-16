@@ -42,7 +42,7 @@ const submitName = (name) => {
     };
     try {
         cordova.plugin.http.sendRequest(
-            `http://10.0.0.108:7000/client/${name}`,
+            `http://192.168.0.105/client/${name}`,
             options,
             function (response) {
                 // prints 200
