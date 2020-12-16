@@ -19,11 +19,11 @@ Para o funcionamento pleno do projeto, é necessário:
   <li> <b>qrscanner</b></li>
   <li> <b>sqlite-storage</b></li> </ul> </li>
 <li> Instalar o Node.js e suas dependências: <ul>
-  <li>cors</li>
-  <li>express</li>
-  <li>method-override</li>
-  <li>sqlite</li>
-  <li>sqlite3</li> </ul> </li>
+  <li><b>cors</b></li>
+  <li><b>express</b></li>
+  <li><b>method-override</b></li>
+  <li><b>sqlite</b></li>
+  <li><b>sqlite3</b></li> </ul> </li>
 <li> Adicionar na pasta do projeto uma pasta "db" para que os esquemas e tabelas do projeto sejam executados (lembre-se de comentar as funções de banco após a população". </li>
 <li> Para popular o banco de dados basta descomentar as funções "createTables", "insertProducts" e "insertClients". </li>
 <li> Para as requisições, é necessário substituir o endereço IP do "index.js" pelo seu endereço IPV6 da sua máquina. </li>
