@@ -12,6 +12,8 @@ Para o funcionamento pleno do projeto, é necessário:
 
 <ul>
 <li> Instalar o Cordova e suas dependências (Android SDK, JAVA SDK, cordova-plugin-advanced-http, cordova-plugin-file, cordova-plugin-qrscanner e cordova-sqlite-storage). </li>
+<li> Instalar o Node.js e suas dependências 
+  <li>(cors, express, method-override, sqlite, sqlite3). </li> </li>
 <li> Adicionar na pasta do projeto uma pasta "db" para que os esquemas e tabelas do projeto sejam executados (lembre-se de comentar as funções de banco após a população". </li>
 <li> Para popular o banco de dados basta descomentar as funções "createTables", "insertProducts" e "insertClients". </li>
 <li> Para as requisições, é necessário substituir o endereço IP do "index.js" pelo seu endereço IPV6 da sua máquina. </li>
