@@ -132,10 +132,10 @@ function getProduct (id, client) {
             function (response) {
                 // prints 200 
                 const product = JSON.parse(response.data);
-                const discountedValue = Number(product.value) * (1-Number(client.discount)/100);
+                const discountedValue = (Number(product.value) * (1-Number(client.discount)/100)).toFixed(2);
                 const mainDiv = document.getElementById('app');
                 const content = `<div class="card-wrapper">
-                
+
                 <div class="card-container">
                 <div class="img">
                      <img src="./img/${product.id}.jpg" alt="${product.name}" />
@@ -153,8 +153,7 @@ function getProduct (id, client) {
                 </div>`
 
                 mainDiv.insertAdjacentHTML("afterend", content);
-                // mainDiv.innerHTML = mainDiv.innerHTML + content;    
-                // return responseObject;
+            
             },
             function (response) {
                 $("#teste").html(`<h1>${response.error} </h1>`);

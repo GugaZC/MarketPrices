@@ -9,25 +9,34 @@
     align-items: center;
     justify-content: center;
 }
-.initialContent{
+.initialContent {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+    padding: 10px;
 }
 
-.inputName{
-    width:50vw;
-    height: 30;
-    border-radius: 2px;
+.inputName {
+    padding:5px;
+    width: 70vw;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
-.buttonName{
-    width:30vw;
-    height: 30;
-    border-radius: 2px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+.buttonName {
+    margin-top: 30px;
+    border: none;
 
+    width: 45vw;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(87, 163, 87);
+    color: white;
     font-size: 1rem;
 }
 .card-wrapper {
