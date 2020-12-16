@@ -8,34 +8,30 @@
             content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover"
         />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta
-            http-equiv="Content-Security-Policy"
-            content="default-src * 'self' 'unsafe-inline' data: gap: 'unsafe-eval';
-    style-src * 'self' 'unsafe-inline'; 
-    connect-src * ; 
-    script-src * 'self' 'unsafe-inline'; 
-    media-src *"
-        />
+        <meta http-equiv="Content-Security-Policy"/>
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
 
         <link rel="stylesheet" href="css/index.css" />
         <title>Hello World</title>
     </head>
-    <body>
-        <div class="app">
-            <input id="inputName" type="text" />
-            <button id="buttonName">Enviar</button>
+    <body id="body"> 
+
+        <div id="app">
+            <div class="initialContent">
+
+                <input id="inputName" class="inputName" type="text" />
+                <button id="buttonName" class="buttonName">Enviar</button>
+            </div>
+            
         </div>
-        <div id="teste">
-            <h1>oi</h1>
-        </div>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-            crossorigin="anonymous"
-        ></script>
-        <script src="cordova.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+
+        </body>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"
+    ></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
 </html>

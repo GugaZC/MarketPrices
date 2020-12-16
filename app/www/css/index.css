@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    display: border-box;
+}
+
+#app{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.initialContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.inputName{
+    width:50vw;
+    height: 30;
+    border-radius: 2px;
+}
+
+.buttonName{
+    width:30vw;
+    height: 30;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    font-size: 1rem;
+}
+.card-wrapper {
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.card-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 90vw;
+    height: 75vh;
+
+    /* background-color: aqua; */
+
+    border-radius: 20px;
+    padding: 5px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-container .img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-container .description {
+    margin-top: 5px;
+    font-size: 1.8rem;
+}
+
+.card-container .old-price {
+    font-weight: bold;
+    color: red;
+    text-decoration: line-through;
+    font-size: 1.5rem;
+}
+
+.card-container .new-price {
+    font-weight: bold;
+    color: rgb(51, 168, 51);
+    font-size: 1.5rem;
+}
+.card-container .button-confirm {
+    padding: 10px;
+}
+.card-container .button-confirm button {
+    padding: 10px;
+    width: 50vw;
+    border: none;
+    background-color: rgb(87, 163, 87);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    font-size: 1rem;
+}
+
+.clientName{
+    font-size: 1.7rem;
+    padding: 10px;
+}
+
+.hidden{
+    display:none;
+}
+
+.default{
+    background-color:white
+}

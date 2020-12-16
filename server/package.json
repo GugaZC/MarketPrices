@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "servidor.js",
   "dependencies": {
     "cors": "^2.8.5",
@@ -18,5 +17,6 @@
     "start": "nodemon servidor.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }

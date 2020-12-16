@@ -23,14 +23,14 @@ const createTables = () => {
     db.run("CREATE TABLE product(id number, name text, value number)");
 };
 
-const insertClients = () => {
-    db.run(`INSERT INTO client(id, name, discount) VALUES(1, "Gustavo", 50)`);
-    db.run(`INSERT INTO client(id, name, discount) VALUES(2, "Julio", 40)`);
-    db.run(`INSERT INTO client(id, name, discount) VALUES(3, "Guilherme", 30)`);
-    db.run(`INSERT INTO client(id, name, discount) VALUES(4, "Thomas", 10)`);
-    db.run(`INSERT INTO client(id, name, discount) VALUES(5, "Antonio", 5)`);
-    db.run(`INSERT INTO client(id, name, discount) VALUES(6, "Christian", 2)`);
-    db.run(`INSERT INTO client(id, name, discount) VALUES(7, "Fabao", 1)`);
+    const insertClients = () => {
+      db.run(`INSERT INTO client(id, name, discount) VALUES(1, "Gustavo", 50)`);
+        db.run(`INSERT INTO client(id, name, discount) VALUES(2, "Julio", 40)`);
+      db.run(`INSERT INTO client(id, name, discount) VALUES(3, "Guilherme", 30)`);
+        db.run(`INSERT INTO client(id, name, discount) VALUES(4, "Thomas", 10)`);
+        db.run(`INSERT INTO client(id, name, discount) VALUES(5, "Antonio", 5)`);
+      db.run(`INSERT INTO client(id, name, discount) VALUES(6, "Christian", 2)`);
+        db.run(`INSERT INTO client(id, name, discount) VALUES(7, "Fabao", 1)`);
 };
 
 const insertProducts = () => {
@@ -62,7 +62,6 @@ async function getProduct(id) {
         });
 
         const product = await db.all(`SELECT * FROM product WHERE id = ${id}`);
-
         await db.close();
 
         return product;
@@ -104,7 +103,6 @@ app.get("/product/:id", async (req, res) => {
     console.log("inside product");
 
     let product = await getProduct(productId);
-
     res.send(product[0]);
 });
 
