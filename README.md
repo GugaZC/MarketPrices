@@ -6,9 +6,11 @@ O usuário loga-se no aplicativo, e após a confirmação de seu login, ele pode
 
 Para o funcionamento pleno do projeto, é necessário:
 
--> Instalar o Cordova e suas dependências (Android SDK, JAVA SDK, cordova-plugin-advanced-http, cordova-plugin-file, cordova-plugin-qrscanner e cordova-sqlite-storage).
--> Adicionar na pasta do projeto uma pasta "db" para que os esquemas e tabelas do projeto sejam executados (lembre-se de comentar as funções de banco após a população".
--> Para popular o banco de dados basta descomentar as funções "createTables", "insertProducts" e "insertClients".
--> Para as requisições, é necessário substituir o endereço IP do "index.js" pelo seu endereço IPV6 da sua máquina.
+<ol>
+<li> Instalar o Cordova e suas dependências (Android SDK, JAVA SDK, cordova-plugin-advanced-http, cordova-plugin-file, cordova-plugin-qrscanner e cordova-sqlite-storage). </li>
+<li> Adicionar na pasta do projeto uma pasta "db" para que os esquemas e tabelas do projeto sejam executados (lembre-se de comentar as funções de banco após a população". </li>
+<li> Para popular o banco de dados basta descomentar as funções "createTables", "insertProducts" e "insertClients". </li>
+<li> Para as requisições, é necessário substituir o endereço IP do "index.js" pelo seu endereço IPV6 da sua máquina. </li>
+  </ol>
 
 
