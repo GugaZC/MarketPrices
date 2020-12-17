@@ -2,9 +2,9 @@
 
 ## Resumo do projeto
 
-Este projeto é uma aplicação mobile para a checagem de preços e compra de produtos a partir de QR-Codes.
+<p align="justify">Este projeto é uma aplicação mobile para a checagem de preços e compra de produtos a partir de QR-Codes. </p>
 
-O usuário loga-se no aplicativo, e após a confirmação de seu login, ele poderá escanear um QR-Code de um respectivo produto para saber o seu valor e eventualmente comprar tal produto. Cada usuário pode ter um fator de desconto, que será aplicado ao valor inicial do produto caso o atributo de desconto for de fato. O usuário pode escanear outros códigos após verificar o preço do produto de interesse e/ou comprar o produto de interesse.
+<p align="justify"> O usuário loga-se no aplicativo, e após a confirmação de seu login, ele poderá escanear um QR-Code de um respectivo produto para saber o seu valor e eventualmente comprar tal produto. Cada usuário pode ter um fator de desconto, que será aplicado ao valor inicial do produto caso o atributo de desconto for de fato. O usuário pode escanear outros códigos após verificar o preço do produto de interesse e/ou comprar o produto de interesse.</p>
 
 ## Funcionamento do projeto
 
