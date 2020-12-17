@@ -28,5 +28,15 @@ Para o funcionamento pleno do projeto, é necessário:
 <li> Para popular o banco de dados basta descomentar as funções "createTables", "insertProducts" e "insertClients". </li>
 <li> Para as requisições, é necessário substituir o endereço IP do "index.js" pelo seu endereço IPV6 da sua máquina. </li>
   </ul>
+  
+  ## Execução do projeto
+
+Para a execução do projeto, é necessário:
+
+
+<ul>
+<li> <b> Inicializar o servidor com nodemon (se você mudar a porta no servidor, lembre-se de mudar no index.js também> </b> </li>
+  <li> <b>Iniciar a emulação ANDROID (ou submeter o APK no seu dispositivo móvel) </b></li>
+  </ul>
 
 
