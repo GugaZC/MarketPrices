@@ -30,7 +30,7 @@ const submitName = (name) => {
     
     function displayContents(err, text){
         if(err){
-            alert("deu erro ao ler o qrcode");
+            alert("Erro na leitura do QRCode!!!");
         } else {
             QRScanner.destroy();
             document.getElementById("body").classList.add("default");

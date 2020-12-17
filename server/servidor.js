@@ -30,7 +30,7 @@ const createTables = () => {
         db.run(`INSERT INTO client(id, name, discount) VALUES(4, "Thomas", 10)`);
         db.run(`INSERT INTO client(id, name, discount) VALUES(5, "Antonio", 5)`);
       db.run(`INSERT INTO client(id, name, discount) VALUES(6, "Christian", 2)`);
-        db.run(`INSERT INTO client(id, name, discount) VALUES(7, "Fabao", 1)`);
+        db.run(`INSERT INTO client(id, name, discount) VALUES(7, "Fabio", 1)`);
 };
 
 const insertProducts = () => {
@@ -44,7 +44,7 @@ const insertProducts = () => {
     );
     db.run(`INSERT INTO product(id, name, value) VALUES(5, "Para sol", 22)`);
     db.run(`INSERT INTO product(id, name, value) VALUES(6, "Pos sol", 40)`);
-    db.run(`INSERT INTO product(id, name, value) VALUES(7, "Gira sol", 8.87)`); //flor
+    db.run(`INSERT INTO product(id, name, value) VALUES(7, "Gira sol", 8.87)`);
 };
 
 const dropTables = () => {
