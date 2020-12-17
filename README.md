@@ -35,7 +35,7 @@ Para a execução do projeto, é necessário:
 
 
 <ul>
-<li> Inicializar o servidor com nodemon (se você mudar a porta no servidor, lembre-se de mudar no index.js também> </li>
+<li> Inicializar o servidor com nodemon (se você mudar a porta no servidor, lembre-se de mudar no index.js também </li>
   <li> Iniciar a emulação ANDROID (ou submeter o APK no seu dispositivo móvel) </li>
   </ul>
 
