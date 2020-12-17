@@ -69,6 +69,21 @@ async function getProduct(id) {
         console.log(error);
     }
 }
+
+async function updateDiscount(client){
+    try {
+         const db = await sqlite.open({
+            filename: "../db/dataBase.db",
+            driver: sqlite3.Database,
+        });
+        db.all(`UPDATE client SET discount = ${client.discount+1} WHERE id = ${client.id}`);    
+        
+        
+    } catch (error) {
+        console.log(error)
+    }
+}
+
 async function getClient(name) {
     try {
         const db = await sqlite.open({
@@ -100,19 +115,30 @@ app.use(bodyParser.json());
 
 app.get("/product/:id", async (req, res) => {
     const productId = req.params.id;
-    console.log("inside product");
-
-    let product = await getProduct(productId);
+    const product = await getProduct(productId);
     res.send(product[0]);
 });
 
 app.get("/client/:name", async (req, res, params) => {
     const clientName = req.params.name;
-    console.log("inside client");
-
-    let client = await getClient(clientName);
+    const client = await getClient(clientName);
 
     res.send(client[0]);
 });
+
+app.get('/client/update/:name', async(req, res) => {
+    const {name} = req.params;
+    const client = await getClient(name);
+    
+    if(client[0].discount<=50){
+        await updateDiscount(client[0]);
+        const newClient = await getClient(client[0].name);
+        res.send(newClient[0]);
+
+    }else{
+
+        res.send(client[0]);
+    }
+})
 
 app.listen(7000);
